@@ -61,7 +61,7 @@ $_SESSION['email_get'] = $email_mail;
 		</div>
 
 
-		<table class="table table-bordered">
+		<table class="table table-borderless table-striped">
 			<thead>
 			    <tr>
 				<th>Transaction</th>
