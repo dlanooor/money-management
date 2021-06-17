@@ -71,6 +71,6 @@ CREATE TABLE moneytable (
 ## How To Start Web Application
 
 1. Open **XAMPP** and start **Apache**
-2. Create Account or Sign Up
-3. Host **index.php**
+2. Host **index.php**
+3. Create Account or Sign Up
 4. Application is Ready To Used
