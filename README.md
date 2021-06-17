@@ -36,7 +36,7 @@ Used Database is PostgreSQL, with specification:
 
 - **User Table**
 
-![image](https://user-images.githubusercontent.com/68103682/121511790-3b1edd80-ca13-11eb-972c-437dc49ddd04.png)
+![image](https://raw.githubusercontent.com/dlanooor/money-management/main/assets/images/readme/user.jpg)
 
 ```SQL
 
@@ -44,7 +44,7 @@ Used Database is PostgreSQL, with specification:
 
 - **Moneytable Table**
 
-![image](https://user-images.githubusercontent.com/68103682/120690766-d2de7200-c4cf-11eb-9c54-8e8241e39c00.png)
+![image](https://raw.githubusercontent.com/dlanooor/money-management/main/assets/images/readme/moneytable.jpg)
 
 ```SQL
 CREATE TABLE moneytable (
