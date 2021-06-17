@@ -32,14 +32,24 @@ Used Database is PostgreSQL, with specification:
 
 *.) Digunakan 4 tabel/relasi:
 
-<img src="/assets/images/readme">]
+![image](https://raw.githubusercontent.com/dlanooor/money-management/main/assets/images/readme/dt.jpg)
 
 - **User Table**
 
 ![image](https://raw.githubusercontent.com/dlanooor/money-management/main/assets/images/readme/user.jpg)
 
 ```SQL
-
+CREATE TABLE public."user"
+(
+   id serial, 
+   name character varying(250), 
+   email character varying(250), 
+   password character varying(250), 
+   CONSTRAINT id PRIMARY KEY (id)
+) 
+WITH (
+  OIDS = FALSE
+);
 ```
 
 - **Moneytable Table**
