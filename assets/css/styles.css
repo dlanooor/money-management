@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans",sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/001/968/633/small/abstract-seamless-white-and-grey-square-3d-pattern-background-modern-geometric-texture-design-illustration-vector.jpg");
+}
+
+th {
+    color: white;
+    text-align: center;
+    background-color: #2C5364;
+}
+
+.pull-left{
+    font-family: "Sofia", sans-serif;
+}
+
+.table-bordered{
+    background-color: #ffffff;
+}
+
+.pull-right{
+    position: absolute;
+    top: 20px;
+    right: 15px;
+}
+
+.navbar-inverse{
+    background-image: linear-gradient(to right,#0F2027, #203A43, #2C5364);
+    width: 1140px;
+    margin: auto;
+}
+
+img {
+    height: 50px;
+}
+.modal-title{
+    text-align: center;
+    color: white;
+}
+.modal-header{
+    background-image: linear-gradient(to right,#0F2027, #203A43, #2C5364);
+}
