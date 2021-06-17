@@ -2,7 +2,7 @@
 
 $host = "localhost";
 $port = "5432";
-$dbname = "quizsbd";
+$dbname = "moneymanagement";
 $user = "postgres";
 $password = "postgres";
 $pg_options = "--client_encoding=UTF8";

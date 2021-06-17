@@ -1,7 +1,7 @@
 <?php
     $host = "localhost";
     $port = "5432";
-    $dbname = "quizsbd";
+    $dbname = "moneymanagement";
     $user = "postgres";
     $password = "postgres"; 
     $connection_string = "host={$host} port={$port} dbname={$dbname} user={$user} password={$password} ";
