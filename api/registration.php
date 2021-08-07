@@ -9,13 +9,15 @@
     if(isset($_POST['submit'])&&!empty($_POST['submit'])){
         
         $sql = "insert into public.user(name,email,password)values('".$_POST['name']."','".$_POST['email']."','".md5($_POST['pwd'])."')";
+		$ret = pg_query($dbconn, $sql);
+		$sql = "insert into credit(email,credit)values('".$_POST['email']."',0)";
         $ret = pg_query($dbconn, $sql);
         if($ret){
                 echo "Data saved Successfully";
                 header("Location: login.php");
         }else{
             
-                echo "Soething Went Wrong";
+                echo "Something Went Wrong";
         }
     }
 ?>
@@ -100,7 +102,7 @@
 
 					<div class="container-login100-form-btn">
 						<button class="login100-form-btn" type="submit" name="submit" value="Submit">
-							Sign in
+							Sign Up
 						</button>
 					</div>
 

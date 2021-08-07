@@ -32,6 +32,9 @@
 		<li><a href="about.php">About</a></li>
 		</ul>
 		<ul class="nav navbar-nav navbar-right">
+		<ul class="nav navbar-nav navbar-right">
+		<li><a href="../api/registration.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+		<li><a href="../api/login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
 		</ul>
 	</div>
 	</nav>

@@ -63,13 +63,16 @@ session_start();
   if(isset($_POST['submit'])&&!empty($_POST['submit'])){
       
       $hashpassword = md5($_POST['pwd']);
-      $sql ="select *from public.user where email = '".pg_escape_string($_POST['email'])."' and password ='".$hashpassword."'";
+	  $email = pg_escape_string($_POST['email']);
+      $sql ="select *from public.user where email = '".$email."' and password ='".$hashpassword."'";
       $data = pg_query($dbconn,$sql); 
+	  
       $login_check = pg_num_rows($data);
       if($login_check > 0){ 
         echo "Login Successfully";
         session_start();
         $_SESSION["email"] = $_POST['email'];
+
         header("Location: ../main.php");
       }else{
 		echo '<script type ="text/JavaScript">';  

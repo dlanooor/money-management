@@ -3,9 +3,12 @@ session_start();
 $email_mail = $_SESSION['email'];
 $_SESSION['email_create'] = $email_mail;
 $_SESSION['email_get'] = $email_mail;
+
+require 'config.php';
+$res = pg_query($dbconn, "SELECT credit FROM credit WHERE email = '".$email_mail."'");
+$val = pg_fetch_result($res, 0, 0);
 ?>
 <!DOCTYPE html>
-
 <html>
 
 <head>
@@ -40,7 +43,8 @@ $_SESSION['email_get'] = $email_mail;
 		<ul class="nav navbar-nav">
 		</ul>
 		<ul class="nav navbar-nav navbar-right">
-		<li><a><?php echo $email_mail?></a></li>
+		<li><a href="#"><?php echo "Rp.", $val?></a></li>
+		<li><a href="#"><?php echo $email_mail?></a></li>
 		<li><a href="api/logout.php"><span class="glyphicon glyphicon-log-out"></span> LogOut</a></li>
 		</ul>
 	</div>
@@ -115,10 +119,12 @@ $_SESSION['email_get'] = $email_mail;
 							<option value="Food">Food</option>
 							<option value="Utilities">Utilities</option>
 							<option value="Insurance">Insurance</option>
-							<option value="Medical & Healthcare">Medical & Healthcare</option>
+							<option value="Medical">Medical & Healthcare</option>
 							<option value="Personal Spending">Personal Spending </option>
 							<option value="Entertainment">Entertainment</option>
 							<option value="Recreation">Recreation</option>
+							<option value="Salary">Salary</option>
+							<option value="Stock">Stock</option>
 							<option value="Miscellaneous">Miscellaneous...</option>
 							</select>
 						</div>

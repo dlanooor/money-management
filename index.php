@@ -64,7 +64,6 @@ img {
 		<ul class="nav navbar-nav navbar-right">
 		<li><a href="api/registration.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
 		<li><a href="api/login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-        
 		</ul>
 	</div>
 	</nav>
@@ -76,5 +75,6 @@ img {
     <p class="w3-large w3-center">By : Ronald Grant - 1906355655</p>
   </div>
 </div>
+
 </body>
 </html>

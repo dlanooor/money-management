@@ -30,7 +30,7 @@ Used Database is PostgreSQL, with specification:
 
 *.) Database Name: **moneymanagement**
 
-*.) Digunakan 4 tabel/relasi:
+*.) Digunakan 3 tabel/relasi:
 
 ![image](https://raw.githubusercontent.com/dlanooor/money-management/main/assets/images/readme/dt.jpg)
 
@@ -67,6 +67,16 @@ CREATE TABLE moneytable (
 	email character varying(250)
 );
 ```
+
+- **Credit Table**
+
+![image](https://raw.githubusercontent.com/dlanooor/money-management/main/assets/images/readme/credit.jpg)
+
+```SQL
+CREATE TABLE credit (
+	email character varying(250),
+	credit bigint
+);
 
 ## How To Start Web Application
 
